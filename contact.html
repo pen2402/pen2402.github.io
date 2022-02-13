@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>pen2402 Portfolio</title>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="navbar-logo">
+      <img src="assets/profile.png" alt="" class="navbar-profile">
+      <p class="navbar-title">Portfolio</p>
+    </ul>
+    <ul class="navbar-menu-ul">
+      <li><a href="index.html" class="navbar-menu-li">Home</a></li>
+      <li><a href="Project.html" class="navbar-menu-li">Project</a></li>
+      <li><a href="Contact.html" class="navbar-menu-li navbar-menu-now">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <div class="contact">
+      <a href="https://mail.google.com" target="_blank" class="contact-body">
+        <img src="assets/gmail.svg" alt="Gmail Icon" class="icon">
+        <p class="contact-text" id="email-gmail"></p>
+      </a>
+    </div>
+    <div class="contact">
+      <a href="https://naver.com" target="_blank" class="contact-body">
+        <img src="assets/naver.svg" alt="Naver Icon" class="icon">
+        <p class="contact-text" id="email-naver"></p>
+      </a>
+    </div>
+    <div class="contact">
+      <a href="https://github.com/pen2402" target="_blank" class="contact-body">
+        <img src="assets/github.svg" alt="Github Icon" class="icon">
+        <p class="contact-text">https://github.com/pen2402</p>
+      </a>
+    </div>
+  </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js";
+    import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js";
+    import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js";
+    
+    const firebaseConfig = {
+      apiKey: "AIzaSyAZaDgk7ygcHADYIspg0UOXCtTyGr1APA0",
+      authDomain: "notice1458-storage.firebaseapp.com",
+      projectId: "notice1458-storage",
+      storageBucket: "notice1458-storage.appspot.com",
+      messagingSenderId: "362034418844",
+      appId: "1:362034418844:web:cf001eb760409ac2158959",
+      measurementId: "G-7N244KT137"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const database = getFirestore(app);
+    const docRef = doc(database, "portfolio", "email");
+    const docSnap = await getDoc(docRef);
+    
+    document.getElementById("email-gmail").innerText = docSnap.data()['gmail'];
+    document.getElementById("email-naver").innerText = docSnap.data()['naver'];
+
+  </script>
+</body>
+</html>

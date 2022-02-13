@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>pen2402 Portfolio</title>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="navbar-logo">
+      <img src="assets/profile.png" alt="Logo" class="navbar-profile">
+      <p class="navbar-title">Portfolio</p>
+    </ul>
+    <ul class="navbar-menu-ul">
+      <li><a href="index.html" class="navbar-menu-li navbar-menu-now">Home</a></li>
+      <li><a href="Project.html" class="navbar-menu-li">Project</a></li>
+      <li><a href="Contact.html" class="navbar-menu-li">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div>
+    <img src="assets/profile.png" alt="Profile Image" class="index-text-img">
+    <div class="index-text-body">
+      <p class="index-text" id="text"></p>
+    </div>
+  </div>
+  <script>
+    text = ["안녕하세요.\n개발을 좋아하는 취업준비생입니다.\n어릴 때 그저 막연하게 꿈꿨던 개발자의 꿈을\n이제 조금씩 선명하게 이뤄나가는 중입니다.",
+    "지금은 1일 1커밋과 1알고리즘에 집중하고 있습니다.\n앞으로도 꾸준히 기초적인 부분을 다지며\n점차 더 넓은 분야에 도전해보고 싶습니다.",
+    "저는 사람들이 필요로 하는 것을 끊임없이 고민합니다.\n더 나은 디자인, 더 유용한 기능을 연구하여\n많은 사람에게 편리한 서비스를 제공하고자 합니다."]
+    idx = 0
+    document.getElementById("text").innerText = text[idx];
+    window.addEventListener('wheel', e=> {
+      val = event.deltaY/100;
+      if (2 >= idx + val && idx + val >= 0) {
+        idx += val;
+      }
+      document.getElementById("text").innerText = text[idx];
+    });
+  </script>
+</body>
+</html>

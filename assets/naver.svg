@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-naver">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="naver" clip-path="url(#clip-naver)">
+    <path id="naver-2" data-name="naver" d="M1.6,0A1.567,1.567,0,0,0,0,1.6V22.4A1.567,1.567,0,0,0,1.6,24H22.4A1.567,1.567,0,0,0,24,22.4V1.6A1.567,1.567,0,0,0,22.4,0ZM5.015,5.6H9.8l4.425,6.458V5.6h4.765V18.4H14.2L9.78,11.943V18.4H5.015Z" fill="#03c75a"/>
+  </g>
+</svg>

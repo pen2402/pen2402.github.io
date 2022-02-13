@@ -1,0 +1,132 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #4B4B4B;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  height: 60px;
+  padding: 0 10px;
+  align-items: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-profile {
+  width: 40px;
+  margin: 0 16px;
+  border-radius: 50%;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.1));
+}
+
+.navbar-title {
+  color: #4b4b4b;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar-menu-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu-li {
+  text-decoration: none;
+  color: #b4b4b4;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.navbar-menu-now {
+  color: #4b4b4b;
+}
+
+.index-text-img {
+  position: fixed;
+  margin: -10px 0 0 150px;
+  width: 240px;
+  border-radius: 50%;
+  filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.1));
+}
+
+.index-text-body {
+  background-color: #F0F0F0;
+  margin: 200px 0 0 0;
+  padding: 10px;
+  height: 200px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.index-text {
+  display: inline;
+  line-height: 36px;
+  font-size: 20px;
+  margin: 0 0 0 420px;
+}
+
+.project-text-body {
+  display: inline;
+  font-size: 20px;
+  height: 600px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-text {
+  font-size: 20px;
+  margin: 0 0 0 0;
+  align-self: center;
+  margin: 0;
+}
+
+.container {
+  align-items: center;
+  margin: 160px 0 0 0;
+}
+
+.icon {
+  width: 60px;
+  display: inline;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 100px;
+}
+
+.contact-text {
+  display: inline;
+  font-size: 20px;
+  width: 280px;
+  margin: 0 20px;
+}
+
+.contact-body {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #4B4B4B;
+}
