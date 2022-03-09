@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>pen2402 Portfolio</title>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="navbar-logo">
+      <img src="assets/profile.png" alt="Logo" class="navbar-profile">
+      <p class="navbar-title">Portfolio</p>
+    </ul>
+    <ul class="navbar-menu-ul">
+      <li><a href="index.html" class="navbar-menu-li">Home</a></li>
+      <li><a href="project.html" class="navbar-menu-li navbar-menu-now">Project</a></li>
+      <li><a href="contact.html" class="navbar-menu-li">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <nav class="project-navbar">
+    <ul class="navbar-menu-ul">
+      <li><a href="project_vocavoca.html" class="navbar-menu-li">보카보까</a></li>
+      <li><a href="project_machinelearning.html" class="navbar-menu-li">자동차 사고 예측</a></li>
+      <li><a href="project_bigdata.html" class="navbar-menu-li">제조데이터 분석</a></li>
+      <li><a href="project_deeplearning.html" class="navbar-menu-li">라면 분류기</a></li>
+      <li><a href="project_digital.html" class="navbar-menu-li navbar-menu-now">음성신호 잡음 제거</a></li>
+    </ul>
+  </nav>
+  
+  <div class="project-text-body">
+    <p class="project-text">음성신호 잡음 제거</p>
+    <br>
+    <p class="project-text">2021년 2학기에 수강한 디지털신호처리 교과목에서 수행한 텀프로젝트입니다.</p>
+    <p class="project-text">음성신호에 포함된 잡음을 제거하여 음성을 강조하도록 하는 것이 목표입니다.</p>
+    <p class="project-text">모든 과정은 Python을 이용하여 구현하였습니다.</p>
+    <br>
+    <img src="assets/digital/1.png" alt="image" class="image">
+    <p class="project-text">음성신호 원본 파일의 파형 일부입니다.</p>
+    <img src="assets/digital/2.png" alt="image" class="image">
+    <p class="project-text">원신호를 잘게 쪼개어 짧은 구간에서 잡음을 제거한 후 이를 다시 합쳐 전체적인 잡음을 제거하는 방식입니다.</p>
+    <img src="assets/digital/3.png" alt="image" class="image">
+    <p class="project-text">전체 신호에 대해 일정 구간마다 50% 오버랩하여 해밍 윈도우로 윈도윙합니다.</p>
+    <img src="assets/digital/4.png" alt="image" class="image">
+    <p class="project-text">윈도윙한 일부 신호를 고속 푸리에 변환합니다.</p>
+    <img src="assets/digital/5.png" alt="image" class="image">
+    <p class="project-text">일정 진폭 이하의 신호를 제거합니다.</p>
+    <img src="assets/digital/6.png" alt="image" class="image">
+    <p class="project-text">음성신호의 주파수 대역 외 신호를 제거합니다.</p>
+    <img src="assets/digital/7.png" alt="image" class="image">
+    <p class="project-text">잡음이 제거된 신호를 다시 고속 푸리에 역변환합니다.</p>
+    <img src="assets/digital/8.png" alt="image" class="image">
+    <p class="project-text">다른 구간도 위와 동일한 과정으로 잡음을 제거합니다.</p>
+    <img src="assets/digital/9.png" alt="image" class="image">
+    <p class="project-text">잡음이 제거된 일부 신호를 50% 오버랩하여 다시 합칩니다.</p>
+    <img src="assets/digital/10.png" alt="image" class="image">
+    <img src="assets/digital/12.png" alt="image" class="image">
+    <p class="project-text">입력신호와 출력신호의 파형 비교입니다.</p>
+    <img src="assets/digital/11.png" alt="image" class="image">
+    <img src="assets/digital/13.png" alt="image" class="image">
+    <p class="project-text">입력신호와 출력신호의 스펙트로그램 비교입니다.</p>
+    <p class="project-text">잡음이 제거되어 상대적으로 음성신호가 강조된 모습입니다.</p>
+
+
+  </div>
+</body>
+</html>
